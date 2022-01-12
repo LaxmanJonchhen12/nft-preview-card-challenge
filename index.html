@@ -3,12 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+   <link rel="stylesheet" href="./css/style.css"> 
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
   <title>Frontend Mentor | NFT preview card component</title>
 </head>
 <body>
-
+<div id="container">
+<div id="card">
+  <div id="card__img">
+    <img src="./images/image-equilibrium.jpg" alt="NFT">
+  </div>
+  <div id="card__details">
+    <h3 id="main__title">Equilibrium #3429</h3>
+    <p id="card__info">
+      Our equlibrium collection promotes <br>
+      balance and calm
+    </p>
+  </div>
+  <div id="price__info" class="center">
+    <div id="price"><img src="./images/icon-ethereum.svg" alt="ETH" class="img__size"><span class="img__text">0.041 ETH</span></div>
+    <div id="time"><img src="./images/icon-clock.svg" alt="clock" class="img__size"><span class="img__text">3 days left</span></div>
+  </div>
+  <div id="footer" class="center">
+    <img src="./images/image-avatar.png" alt="creator" id="creator__img">
+    <span id="creation">Creation of</span>&nbsp;
+    <span id="creator__info">Jules Wyvern</span>
+  </div>
+</div>
+</div>
 </body>
 </html>
