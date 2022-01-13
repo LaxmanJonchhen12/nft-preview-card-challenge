@@ -3,6 +3,7 @@
     padding:0;
     box-sizing: border-box;
     font-family: 'Outfit', sans-serif;
+    cursor: pointer;
 }
 
 #container{
@@ -27,11 +28,29 @@
     border-radius: 1rem;
 }
 
+#card #card__img #eye{
+    height: 35px;
+    width: 35px;
+    bottom: 145px;
+    position: relative;
+    left: 107px;
+    display:none;
+}
+
+
+#card #card__img img:hover{
+    
+}
+
 #card #card__details #main__title{
     color:hsl(0, 0%, 100%);
     font-size: 1.2rem;
     font-weight: 300;
     padding:0.5rem 0;
+}
+
+#card #card__details #main__title:hover{
+   color:hsl(178, 100%, 50%);
 }
 
 #card #card__details #card__info{
@@ -83,6 +102,10 @@
 
 #footer #creator__info{
     color:hsl(0, 0%, 100%);
+}
+
+#footer #creator__info:hover{
+    color:hsl(178, 100%, 50%);
 }
 
 #footer #creator__img{
