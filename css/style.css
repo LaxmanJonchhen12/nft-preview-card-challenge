@@ -22,25 +22,42 @@
     border-radius:1rem;
 }
 
+#card #card_img{
+    position: relative;
+    width:255px;
+}
+
 #card #card__img img{
     height: 250px;
     width: 250px;
+    border-radius: 1rem;  
+}
+
+#card #card__img #image__overlay{
+    position: absolute;
+    top: 130px;
+    left: 559px;
+    width: 250px;
+    height: 250px;
+    background: hsl(178, 100%, 50%);
     border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity:0;
 }
 
-#card #card__img #eye{
-    height: 35px;
+#card #card__img #image__overlay #view{
+    height:35px;
     width: 35px;
-    bottom: 145px;
-    position: relative;
-    left: 107px;
-    display:none;
 }
 
 
-#card #card__img img:hover{
-    
+#card #card__img #image__overlay:hover{
+   opacity: 1;
+   filter:blur(0.2px);
 }
+
 
 #card #card__details #main__title{
     color:hsl(0, 0%, 100%);
