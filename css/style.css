@@ -6,6 +6,10 @@
     cursor: pointer;
 }
 
+a{
+    text-decoration: none;
+}
+
 #container{
     background:hsl(217, 54%, 11%);
     height: 100vh;
@@ -22,7 +26,7 @@
     border-radius:1rem;
 }
 
-#card #card_img{
+#card #card__img{
     position: relative;
     width:255px;
 }
@@ -33,18 +37,23 @@
     border-radius: 1rem;  
 }
 
+#card #card__img img:hover{
+    filter: blur(1px);  
+}
+
 #card #card__img #image__overlay{
     position: absolute;
-    top: 130px;
-    left: 559px;
-    width: 250px;
-    height: 250px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background: hsl(178, 100%, 50%);
     border-radius: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
     opacity:0;
+    transition-delay:0.5s;
 }
 
 #card #card__img #image__overlay #view{
@@ -55,7 +64,6 @@
 
 #card #card__img #image__overlay:hover{
    opacity: 1;
-   filter:blur(0.2px);
 }
 
 
@@ -68,6 +76,7 @@
 
 #card #card__details #main__title:hover{
    color:hsl(178, 100%, 50%);
+   transition-delay: 1.1s;
 }
 
 #card #card__details #card__info{
@@ -123,6 +132,7 @@
 
 #footer #creator__info:hover{
     color:hsl(178, 100%, 50%);
+    transition-delay: 1.1s;
 }
 
 #footer #creator__img{
